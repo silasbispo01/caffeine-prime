@@ -1,0 +1,222 @@
+header {
+    width: 100%;
+    display: inline-block;
+
+    
+    font-size: 1.375rem;
+}
+
+header .access-header {
+    display: flex;
+    align-items: center;
+    
+    height: 90px;
+    padding: 0 120px;
+
+    background: var(--white-);
+}
+
+.logo {
+    margin-right: 120px;
+}
+
+.access-buttons-as-link button {
+    font-size: 1.375rem;
+    margin: 0 25px;
+}
+
+.access-individuals-buttons {
+    margin-left: auto;
+    display: flex;
+}
+
+.access-individuals-buttons button {
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    margin: 0 10px;
+}
+.access-individuals-buttons button img {
+    margin: 0 5px;
+    height: 20px;
+    width: 20px;
+}
+
+header .navigation-header {
+    display: flex;
+    align-items: center;
+
+    height: 80px;
+    padding: 0 120px;
+
+    background: var(--black-);
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.navigation-links a {
+    color: var(--white-);
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navigation-header button {
+    font-size: 1rem;
+    font-family: 'Nexa Bold', sans-serif;
+    
+
+    width: 250px;
+    transform: skewX(-5deg);
+
+    margin-left: 80px;
+    padding: 5px;
+    border-radius: 2px;
+
+    background: linear-gradient(#E4CA7F, #CC9544);
+    color: var(--black-);
+    transition: filter 0.2s;
+}
+
+.navigation-header button:hover {
+    filter: brightness(0.7);
+}
+
+/* ======= MAIN E SECTIONS ======= */
+
+main .discover {
+    background: url(../img/bg-discover.png) no-repeat center;
+    background-position-y: -5px;
+
+    align-items: center;
+    padding: 200px 120px;
+}
+
+.discover p {
+    color: var(--white-);
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+    width: 670px;
+}
+
+.discover p span {
+    font-family: 'Museo';
+}
+
+.discover button {
+    font-size: 1.875rem;
+    font-family: 'Nexa Bold';
+
+    background: linear-gradient(150deg, #E4CA7F, #CC9544);
+    padding: 15px 100px;
+    border-radius: 4px;
+}
+
+main .benefits {
+    padding-top: 90px;
+}
+
+.benefits bg {
+    position: absolute;
+}
+
+.benefits h1 {
+    text-align: center;
+    
+    font-size: 3rem;
+    color: var(--golden-);
+}
+
+.benefits-content {
+    position: relative;
+
+    width: 979px;
+    height: 1154px;
+    margin: 120px auto;
+
+    background: var(--black-100-);
+}
+
+
+.benefits-content::after {
+    content: url(../img/benefits-bg.svg);
+    position: absolute;
+
+    top: -100px;
+    right: -300px;
+    z-index: -1000;
+}
+
+.benefits-content::before {
+    content: url(../img/benefits-bg.svg);
+    position: absolute;
+
+    bottom: -100px;
+    left: -300px;
+    z-index: -1000;
+}
+
+.benefits-content div {
+    display: flex;
+}
+
+.benefits-content div img {
+    height: 400px;
+    width: auto;
+}
+
+.benefits-content div:nth-child(1) img {
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.benefits-content div:nth-child(2) img {
+    margin-right: -30px;
+}
+
+.benefits-content div:nth-child(3) img {
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+
+.benefits-group {
+    display: flex;
+    flex-direction: column;
+
+    padding: 27px;
+}
+
+.benefits-group h2 {
+    font-size: 2rem;
+    font-family: 'Nexa Bold';
+
+    margin-bottom: 5px;
+    color: var(--golden-);
+}
+
+.benefits-group p {
+    font-size: 1.5rem;
+    color: var(--white-);
+}
+
+.benefits-content div:nth-child(2) .benefits-group h2, .benefits-content div:nth-child(2) .benefits-group p {
+    text-align: right;
+}
+
+.benefits-group hr {
+    border-color: var(--golden-);
+    margin: 20px 0;
+}
+

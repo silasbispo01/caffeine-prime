@@ -1,0 +1,47 @@
+:root {
+    --white-: #fff;
+    --black-: #000;
+    --golden-: #E4CA7F;
+
+    --black-100-: #191818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./font/Nexa Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('./font/Nexa Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('./font/Museo.otf') format('opentype');
+    font-weight: normal;
+}
+
+body {
+    font: 400 0.75rem 'Nexa';
+    background: var(--black-);
+}
+
+input, button, select {
+    font: 400 0.75rem 'Nexa';
+    border: none;
+    background: none;
+    cursor: pointer;
+}
