@@ -79,56 +79,202 @@
 			</section>
       <section class="operation" id="operation">
 				<h2>COMO FUNCIONA O CAFFEINE PRIME</h2>
-
+				<div class="explanations">
+					<div class="explanation-group">
+						<h3>01</h3>
+						<div>
+							<img src="../assets/img/config.svg" alt="Personalização">
+							<h3>PERSONALIZAÇÃO</h3>
+							<p>Escolha a duração do seu plano e aproveite as condições exclusivas de cada uma das opções. Faça do seu jeito e personalize com a quantidade e sabores que desejar.</p>
+						</div>
+					</div>
+					<div class="explanation-group">
+						<h3>02</h3>
+						<div>
+							<img src="../assets/img/credit-card.svg" alt="Cartão de crédito">
+							<h3>PAGAMENTO</h3>
+							<p>A assinatura é recorrente e com cobrança automática mensal. Para os programas com fidelidade, pode ficar tranquilo que nenhum limite será bloqueado no seu cartão.</p>
+						</div>
+					</div>
+					<div class="explanation-group">
+						<h3>03</h3>
+						<div>
+							<img src="../assets/img/box.svg" alt="Caixa">
+							<h3>ENTREGA</h3>
+							<p>Sua caixa Prime chegará mensalmente no endereço cadastrado, com a comodidade de não se preocupar com seu estoque e a segurança que ele não vai acabar!</p>
+						</div>
+					</div>
+				</div>
 		</section>
       <section class="plans">
-				<img src="" alt="bg">
-				<h1>ESCOLHA SEU PLANO</h1>
+				<h2>ESCOLHA SEU PLANO</h2>
 				<div class="plans-options">
 					<div class="monthly">
 						<p>FRETE GRÁTIS</p>
-						<h3>MENSAL</h3>
-						<p class="plans-amount">
-							A partir de: <br>
-							R$00,0
-							<span>R$00,0</span>
-							<hr>
-							Assinatura recorrente com cobrança automática mensal.
-						</p>
+						<div class="plans-amount">
+							<h3>MENSAL</h3>
+							<p>
+								A partir de: <br>
+								<span>R$00,0</span>
+							</p>
+								<span>R$00,0</span>
+								<hr>
+								<p>
+									Assinatura recorrente com cobrança automática mensal.
+								</p>
+								<button>ASSINAR AGORA</button>
+							</div>
 					</div>
 					<div class="quarterly">
 						<p>FRETE GRÁTIS</p>
-						<h3>TRIMESTRAL</h3>
-						<p class="plans-amount">
-							A partir de: <br>
-							R$00,0
-							<span>R$00,0</span>
-							<hr>
-							Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 3 meses.
-						</p>
+						<div class="plans-amount">
+							<h3>TRIMESTRAL</h3>
+							<p>
+								A partir de: <br>
+								<span>R$00,0</span>
+							</p>
+								<span>R$00,0</span>
+								<hr>
+								<p>
+									Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 3 meses.
+								</p>
+								<button>ASSINAR AGORA</button>
+						</div>
 					</div>
 					<div class="semester">
 						<p>FRETE GRÁTIS</p>
-						<h3>SEMESTRAL</h3>
-						<p class="plans-amount">
-							A partir de: <br>
-							R$00,0
-							<span>R$00,0</span>
+						<div class="plans-amount">
+							<h3>SEMESTRAL</h3>
+							<p>
+								A partir de: <br>
+								<span>R$00,0</span>
+							</p>
+								<span>R$00,0</span>
 							<hr>
-							Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 6 meses.
-						</p>
+							<p>
+								Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 6 meses.
+							</p>
+							<button>ASSINAR AGORA</button>
+						</div>
 					</div>
 				</div>
 				<p>*Planos Trimestral e Semestral não irão bloquear o limite do seu cartão e a cobrança será feita mensalmente.</p>
 			</section>
       <section class="discover-your-plain">
 				<h2>DESCUBRA O PLANO IDEAL PARA VOCÊ</h2>
-				<div>
-					
+				<div class="discover-your-plain-container">
+					<div>
+						<div>
+							<h3><span>1.</span>ESCOLHA OS SABORES E A QUANTIDADE</h3>
+							<div>
+								<div>
+									<img src="" alt="">
+									<h3>SUPERCOFFE 2.0</h3>
+									<p>Original 220g - 22 doses</p>
+									<div>Selecione a quantia desejada:
+										<button onclick="decrement"></button>
+										<div id='counter'>0</div>
+										<button onclick="increment"></button>
+									</div>
+								</div>
+								<div>
+									<img src="" alt="">
+									<h3>IMPOSSIBLE CHOCOLATE</h3>
+									<p>Original 220g - 22 doses</p>
+									<div>
+										Selecione a quantia desejada:
+										<button onclick="decrement"></button>
+										<div id='counter'>0</div>
+										<button onclick="increment"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3><span>2.</span>ESCOLHA SEU PLANO</h3>
+							<ul>
+								<li>
+									<input type="radio" name="plan" id="monthly">
+									<div>
+										<h3>Plano mensal</h3>
+										<p>R$ XX,XX + FRETE GRÁTIS</p>
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="plan" id="quarterly">
+									<div>
+										<h3>Plano trimestal</h3>
+										<p>R$ XX,XX + FRETE GRÁTIS</p>
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="plan" id="semester">
+									<div>
+										<h3>Plano semestral</h3>
+										<p>R$ XX,XX + FRETE GRÁTIS</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<button>ASSINAR POR R$ XX,XX/MÊS</button>
 				</div>
 			</section>
-      <section class="faq"></section>
+      <section class="faq">
+				<h2>PERGUNTAS FREQUENTES</h2>
+				<div class="faq-accordion">
+					<button class="accordion">O que é a Caffeine Prime?</button>
+					<div class="panel">
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</div>
+				</div>
+			</section>
     </main>
-    <footer></footer>
+    <footer>
+			<div>
+				<div>
+					<h2>CAFFEINE ARMY</h2>
+					<p>Encontre uma loja</p>
+					<p>Fale conosco</p>
+				</div>
+				<div>
+					<h2>ÁREA DO CLIENTE</h2>
+					<p>Meus pedidos</p>
+					<p>Assinatura</p>
+				</div>
+				<div>
+					<h2>COMPRAR</h2>
+					<p>SuperCoffee 2.0</p>
+					<p>SuperCoffee Impossible Chocolate</p>
+					<p>SupperCoffe To Go</p>
+					<p>SupperCoffe Economic Size</p>
+					<p>SupperCoffe Impossible Chocolate Economic Size</p>
+					<p>Caffeine Prime</p>
+				</div>
+				<div>
+					<h2>CAFFEINE ACADEMY</h2>
+					<p>Corpo</p>
+					<p>Mente</p>
+					<p>Coaching</p>
+					<p>Nutrição</p>
+					<p>Espiritualidade</p>
+					<p>Receitas</p>
+				</div>
+				<div>
+					<h2>Assine nossa Newsletter</h2>
+					<p>Assine nossa newsletter e receba acesso antecipado a ofertas especiais, conteúdos, receitas e dicas de como alcançar a sua melhor versão.</p>
+					<form>
+						<input type="text">
+						<button>ASSINAR!</button>
+					</form>
+				</div>
+			</div>
+			<div>
+				<a href="#">Política de Entrega</a>
+				<a href="#">Política de Privacidade</a>
+				<a href="#">Política de Troca e Devolução</a>
+				<p>© 2021 Caffeine Army. CNPJ: 27.403.527/0001-13</p>
+			</div>
+		</footer>
   </body>
 </html>

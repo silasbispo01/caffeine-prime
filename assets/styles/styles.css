@@ -220,13 +220,208 @@ main .benefits {
 
 /* COMO FUNCIONA O CAFFEINE PRIME */
 
-main .operation {
-
-}
-
 .operation h2 {
     text-align: center;
     
     font-size: 3rem;
     color: var(--golden-);
+}
+
+.explanations {
+    display: flex;
+    justify-content: space-between;
+    
+    color: var(--white-);
+    
+    padding: 80px 120px;
+}
+
+.explanation-group {
+    display: flex;
+}
+
+.explanation-group > h3 {
+    text-align: center;
+    align-self: center;
+    
+    font-family: 'Nexa Bold';
+    font-size: 6.8rem;
+    color: var(--golden-);
+
+    margin-right: 20px;
+}
+
+.explanation-group:nth-child(n + 2) > h3 {
+    margin-left: 20px;
+}
+
+.explanation-group div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 24.375rem;
+    height: 27.85rem;
+
+    background: url(../img/circle.svg) no-repeat;
+    background-size: 100% contain;
+}
+
+.explanation-group div img { 
+    height: 50px;
+    width: 50px;
+
+    margin-bottom: 20px;
+}
+
+.explanation-group div h3 {
+    font-size: 1.5rem;
+    color: var(--golden-);
+
+    display: block;
+}
+
+.explanation-group div p {
+    font-size: 1.25rem;
+    width: 300px;
+}
+
+/* ESCOLHA SEU PLANO */
+
+.plans {
+    background: url(../img/bg-plans.png) no-repeat;
+
+    color: var(--white-);
+}
+
+.plans > p {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.plans h2 {
+    text-align: center;
+    padding: 60px 0 38px 0;
+
+    font-size: 2.5rem;
+    color: var(--white-);
+}
+
+@media (max-width: 768px) {
+    .plans-options {
+        flex-direction: column;
+    }
+}
+
+.plans-options {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 120px;  
+}
+
+/* MONTHLY, QUARTERLY, SEMESTER */
+
+.plans-options > div {
+    width: 450px;
+    height: 563px;
+
+    background: var(--black-);
+    border-radius: 4px;
+}
+
+.plans-options > div > p {
+    height: 54px;
+    width: 100%;
+
+    padding: 15px 0;
+    text-align: center;
+
+    font-family: 'Nexa Bold';
+    font-size: 1.25rem;
+}
+
+.plans-options button {
+    font-size: 1.25rem;
+    font-family: 'Nexa Bold';
+    color: var(--golden-);
+
+    padding: 7px 0;
+
+    border: 2px solid var(--golden-);
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.plans-amount {
+    padding: 20px 40px;
+}
+
+.plans-amount h3 {
+    font-size: 1.875rem;
+}
+
+.plans-amount p {
+    font-size: 1rem;
+    color: var(--grey-);
+
+    line-height: 1.4;
+}
+
+.plans-amount p:nth-last-child(2n) {
+    height: 50px;
+}
+
+.plans-amount p span {
+    text-decoration: line-through;
+}
+
+.plans-amount > span {
+    display: block;
+
+    font-size: 3rem;
+    font-family: 'Nexa Bold';
+    color: var(--white-);
+}
+
+.plans-amount > span::after {
+    content: '/mês';
+
+    font-size: 1rem;
+    font-family: 'Nexa';
+}
+
+.plans-amount > hr {
+    margin: 14px 0;
+}
+
+.plans-amount button {
+    margin: 170px 0;
+}
+
+.monthly {
+    border: 2px solid var(--white-);
+}
+
+.quarterly {
+    border: 2px solid #89794c;
+}
+
+.semester {
+    border: 2px solid #ebb563;
+}
+
+.monthly > p {
+    background: var(--white-);
+    color: var(--black-);
+}
+
+.quarterly > p {
+    background: #89794c;
+    color: var(--white-);
+}
+
+.semester > p {
+    background: linear-gradient(150deg, #E4CA7F  , #CC9544);
+    color: var(--black-);
 }
