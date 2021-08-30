@@ -51,6 +51,7 @@ header .navigation-header {
     padding: 0 120px;
 
     background: var(--black-);
+    font-family: 'Nexa Bold', sans-serif;
 }
 
 .navigation-links {
@@ -122,16 +123,13 @@ main .discover {
     padding: 15px 100px;
     border-radius: 4px;
 }
+/* BENEFÍCIOS DO CAFFEINE PRIME */
 
 main .benefits {
     padding-top: 90px;
 }
 
-.benefits bg {
-    position: absolute;
-}
-
-.benefits h1 {
+.benefits h2 {
     text-align: center;
     
     font-size: 3rem;
@@ -198,7 +196,7 @@ main .benefits {
     padding: 27px;
 }
 
-.benefits-group h2 {
+.benefits-group h3 {
     font-size: 2rem;
     font-family: 'Nexa Bold';
 
@@ -220,3 +218,15 @@ main .benefits {
     margin: 20px 0;
 }
 
+/* COMO FUNCIONA O CAFFEINE PRIME */
+
+main .operation {
+
+}
+
+.operation h2 {
+    text-align: center;
+    
+    font-size: 3rem;
+    color: var(--golden-);
+}
