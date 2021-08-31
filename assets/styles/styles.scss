@@ -1,24 +1,23 @@
-@charset "UTF-8";
 /* ============= PARTE SEM SASS ============= */
+
 header {
   width: 100%;
   display: inline-block;
+
   font-size: 1.375rem;
 }
 
 header .access-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+
   height: 90px;
   padding: 0 120px;
+
   background: var(--white-);
 }
 
-@media (max-width: 1366px) {
+@media(max-width: 1366px) {
   .access-buttons-as-link button {
     margin: 0 10px;
   }
@@ -30,13 +29,11 @@ header .access-header {
 
 .access-buttons-as-link {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
+
 
 .access-buttons-as-link button {
   font-family: 'Nexa';
@@ -45,25 +42,18 @@ header .access-header {
 
 .access-individuals-buttons {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .access-individuals-buttons button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+
   font-size: 1rem;
   margin: 0 10px;
 }
-
 .access-individuals-buttons button img {
   margin: 0 5px;
   height: 20px;
@@ -71,35 +61,30 @@ header .access-header {
 }
 
 header .navigation-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+
   height: 80px;
   padding: 0 120px;
+
   background: var(--black-);
   font-family: "Nexa Bold", sans-serif;
 }
 
 .navigation-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+
   margin-right: 60px;
 }
 
 .navigation-links a {
   color: var(--white-);
   text-decoration: none;
+
   font-size: 1rem;
   font-weight: 800;
 }
@@ -107,32 +92,29 @@ header .navigation-header {
 .navigation-header button {
   font-size: 1rem;
   font-family: "Nexa Bold", sans-serif;
+
   width: 250px;
-  -webkit-transform: skewX(-5deg);
-          transform: skewX(-5deg);
+  transform: skewX(-5deg);
+
   padding: 5px;
   border-radius: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4ca7f), to(#cc9544));
+
   background: linear-gradient(#e4ca7f, #cc9544);
   color: var(--black-);
-  -webkit-transition: -webkit-filter 0.2s;
-  transition: -webkit-filter 0.2s;
   transition: filter 0.2s;
-  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
 .navigation-header button:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+  filter: brightness(0.7);
 }
 
 /* ======= MAIN E SECTIONS ======= */
+
 main .discover {
   background: url(../img/bg-discover.png) no-repeat center;
   background-position-y: -5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+  align-items: center;
   padding: 200px 120px;
 }
 
@@ -141,6 +123,7 @@ main .discover {
   font-family: "Segoe UI";
   font-weight: bold;
   font-size: 3rem;
+
   margin-bottom: 20px;
   width: 670px;
 }
@@ -152,40 +135,47 @@ main .discover {
 .discover button {
   font-size: 1.875rem;
   font-family: "Nexa Bold";
+
   background: linear-gradient(150deg, #e4ca7f, #cc9544);
   padding: 15px 100px;
   border-radius: 4px;
 }
-
 /* BENEFÍCIOS DO CAFFEINE PRIME */
+
 main .benefits {
   padding: 90px 100px 0 100px;
 }
 
 .benefits h2 {
   text-align: center;
+
   font-size: 3rem;
   color: var(--golden-);
 }
 
 .benefits-content {
   position: relative;
+
   max-width: 979px;
   margin: 120px auto;
+
   background: var(--black-100-);
 }
 
 .benefits-content::after {
   content: '';
+
   background: url(../img/benefits-bg.svg) no-repeat;
   background-position: center;
   background-size: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
+
   width: 728px;
   height: 1229px;
+
   position: absolute;
+
   top: -100px;
   right: -300px;
   z-index: -1000;
@@ -193,30 +183,31 @@ main .benefits {
 
 .benefits-content::before {
   content: '';
+
   background: url(../img/benefits-bg.svg) no-repeat;
   background-position: center;
   background-size: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
+
   width: 728px;
   height: 1229px;
+
   position: absolute;
+
   bottom: -100px;
   left: -300px;
   z-index: -1000;
 }
 
-@media (max-width: 1580px) {
+@media(max-width: 1580px) {
   .benefits-content::after,
   .benefits-content::before {
     display: none;
   }
-}
+} 
 
 .benefits-content div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -240,19 +231,16 @@ main .benefits {
 }
 
 .benefits-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+
   padding: 27px;
 }
 
 .benefits-group h3 {
   font-size: 2rem;
   font-family: "Nexa Bold";
+
   margin-bottom: 5px;
   color: var(--golden-);
 }
@@ -262,18 +250,17 @@ main .benefits {
   color: var(--white-);
 }
 
+
 .benefits-content div:nth-child(2) .benefits-group h3,
 .benefits-content div:nth-child(2) .benefits-group p {
   text-align: right;
 }
 
-.benefits-content div:nth-child(2) .benefits-group {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.benefits-content div:nth-child(2) .benefits-group{
+  align-self: center;
 }
 
-@media (max-width: 1280px) {
+@media(max-width: 1280px){
   .benefits h2 {
     font-size: 2.5rem;
   }
@@ -294,37 +281,35 @@ main .benefits {
 }
 
 /* COMO FUNCIONA O CAFFEINE PRIME */
+
 .operation h2 {
   text-align: center;
+
   font-size: 3rem;
   color: var(--golden-);
 }
 
 .explanations {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+
   color: var(--white-);
+
   padding: 80px 120px;
 }
 
 .explanation-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .explanation-group > h3 {
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
+
   font-family: "Nexa Bold";
   font-size: 6.8rem;
   color: var(--golden-);
+
   margin-right: 20px;
 }
 
@@ -333,37 +318,31 @@ main .benefits {
 }
 
 .explanation-group div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+
   max-width: 24.375rem;
   height: 27.85rem;
-  background-size: 100% contain;
-}
 
-@media (min-width: 1920px) {
-  .explanation-group div {
+  background-size: 100% contain;
+  
+  @media(min-width: 1920px) {
     width: 24.375rem;
     background: url(../img/circle.svg) no-repeat center;
   }
 }
-
 .explanation-group div img {
   height: 50px;
   width: 50px;
+
   margin-bottom: 20px;
 }
 
 .explanation-group div h3 {
   font-size: 1.5rem;
   color: var(--golden-);
+
   display: block;
 }
 
@@ -372,38 +351,46 @@ main .benefits {
   max-width: 300px;
 }
 
-@media (max-width: 1366px) {
+@media(max-width: 1366px) {
   .operation h2 {
     font-size: 2.5rem;
   }
+
   .explanations {
     padding: 80px 40px;
   }
+
   .explanation-group > h3 {
     font-size: 4.5rem;
   }
+
   .explanation-group div img {
     height: 35px;
     width: 35px;
+
     margin-bottom: 15px;
   }
-  .explanation-group div h3 {
+
+  .explanation-group div h3 { 
     font-size: 1.25rem;
   }
-  .explanation-group div p {
+
+  .explanation-group div p { 
     font-size: 1rem;
   }
+
   .explanation-group div {
     background: none;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
+
 }
 
 /* ESCOLHA SEU PLANO */
+
 .plans {
   background: url(../img/bg-plans.png) no-repeat;
+
   color: var(--white-);
 }
 
@@ -415,42 +402,42 @@ main .benefits {
 .plans h2 {
   text-align: center;
   padding: 60px 0 38px 0;
+
   font-size: 2.5rem;
   color: var(--white-);
 }
 
 @media (max-width: 768px) {
   .plans-options {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .plans-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
+
 }
 
 /* MONTHLY, QUARTERLY, SEMESTER */
+
 .plans-options > div {
   max-width: 370px;
   height: 563px;
+
   background: var(--black-);
   border-radius: 4px;
+
   margin: 0 20px;
 }
 
 .plans-options > div > p {
   height: 54px;
   width: 100%;
+
   padding: 15px 0;
   text-align: center;
+
   font-family: "Nexa Bold";
   font-size: 1.25rem;
 }
@@ -459,7 +446,9 @@ main .benefits {
   font-size: 1.25rem;
   font-family: "Nexa Bold";
   color: var(--golden-);
+
   padding: 7px 0;
+
   border: 2px solid var(--golden-);
   border-radius: 4px;
   width: 100%;
@@ -476,6 +465,7 @@ main .benefits {
 .plans-amount p {
   font-size: 1rem;
   color: var(--grey-);
+
   line-height: 1.4;
 }
 
@@ -489,6 +479,7 @@ main .benefits {
 
 .plans-amount > span {
   display: block;
+
   font-size: 3rem;
   font-family: "Nexa Bold";
   color: var(--white-);
@@ -496,6 +487,7 @@ main .benefits {
 
 .plans-amount > span::after {
   content: "/mês";
+
   font-size: 1rem;
   font-family: "Nexa";
 }
@@ -536,165 +528,165 @@ main .benefits {
 }
 
 /*  ============ COM SASS ============ */
+
 .discover-your-plain {
   padding: 0 140px;
+
+  > h2 {
+    text-align: center;
+    padding: 60px 0 38px 0;
+
+    font-size: 3rem;
+    color: var(--golden-);
+  }
 }
 
-.discover-your-plain > h2 {
-  text-align: center;
-  padding: 60px 0 38px 0;
-  font-size: 3rem;
-  color: var(--golden-);
-}
 
 .discover-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+
   background: var(--black-100-);
   padding: 70px;
+
   width: 100%;
   height: 761px;
-}
 
-.discover-container > button {
-  height: 70px;
-  padding: 0 30px;
-  margin-top: 60px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-family: 'Nexa Bold';
-  font-size: 1.5rem;
-  background: linear-gradient(150deg, #e4ca7f, #cc9544);
-  border-radius: 4px;
+  > button {
+		height: 70px;
+		padding: 0 30px;
+    margin-top: 60px;
+
+    align-self: center;
+
+    width: fit-content;
+		
+		font-family: 'Nexa Bold';
+		font-size: 1.5rem;
+
+		background: linear-gradient(150deg, #e4ca7f, #cc9544);
+
+		border-radius: 4px;
+  }
 }
 
 .discover-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  height: 494px;
+	height: 494px;
 }
 
 .discover-options {
-  width: 100%;
-}
+	width: 100%;
 
-.discover-options.first {
-  padding-right: 100px;
-  border-right: 1px solid var(--golden-);
-}
+	&.first {
+		padding-right: 100px;
+		border-right: 1px solid var(--golden-);
+	}
 
-.discover-options.second {
-  padding-left: 100px;
-}
-
-.discover-options > h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2.5rem;
-  color: var(--white-);
-  max-width: 500px;
-}
-
-.discover-options > h3 span {
-  line-height: 1.75;
-  margin-right: 20px;
-  font-size: 1.5rem;
-}
-
-.discover-options > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.discover-options ul {
-  margin-top: 70px;
-}
-
-.discover-options ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 65px;
-}
-
-.discover-options ul li input[type='radio'] {
-  margin-top: 20px;
-}
-
-.discover-options ul li input[type='radio']:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: var(--white-);
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 4px solid var(--white-);
-}
-
-.discover-options ul li input[type='radio']:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background: linear-gradient(150deg, #e4ca7f, #cc9544);
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 4px solid white;
-}
-
-.discover-options ul li + li div {
-  width: 100%;
-  border-top: 1px solid var(--golden-);
-  padding-top: 40px;
-}
-
-.discover-options ul li div {
-  margin-left: 25px;
-  color: var(--white-);
-}
-
-.discover-options ul li div h3 {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-family: 'Nexa Bold';
-}
-
-.discover-options ul li div p {
-  font-size: 1.25rem;
-}
-
-@media (max-width: 1366px) {
-  .discover-your-plain > h2 {
-    font-size: 2.5rem;
+	&.second {
+	  padding-left: 100px;
   }
+
+  > h3 {
+    display: flex;
+
+    font-size: 2.5rem;
+    color: var(--white-);
+    max-width: 500px;
+
+    span {
+      line-height: 1.75;
+
+      margin-right: 20px;
+      font-size: 1.5rem;
+    }
+  }
+
+  > div {
+    display: flex;
+  }
+
+	ul { 
+		margin-top: 70px;
+
+		li {
+			display: flex;
+			align-items: center;
+
+			margin-bottom: 65px;
+
+			input[type='radio'] {
+				margin-top: 20px;
+
+				&:after {
+				width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: var(--white-);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 4px solid var(--white-);
+				}
+				
+				&:checked:after {
+					width: 15px;
+					height: 15px;
+					border-radius: 15px;
+					top: -2px;
+					left: -1px;
+					position: relative;
+					background: linear-gradient(150deg, #e4ca7f, #cc9544);
+					content: '';
+					display: inline-block;
+					visibility: visible;
+					border: 4px solid white;
+				}
+			}
+
+			& + li {
+			 	div {
+					 width: 100%;
+					border-top: 1px solid var(--golden-);
+					padding-top: 40px;
+				}
+			}
+
+			div {
+				margin-left: 25px;
+				color: var(--white-);
+
+				h3 {
+					font-size: 1.25rem;
+					line-height: 1.5;
+
+					font-family: 'Nexa Bold';
+				}
+
+				p {
+					font-size: 1.25rem;
+				}
+      }
+		}
+	}
+}
+
+@media(max-width: 1366px) {
+  .discover-your-plain > h2 {
+      font-size: 2.5rem;
+  }
+
   .discover-options > h3 {
     font-size: 2rem;
-  }
+  } 
+
+
 }
 
-@media (max-width: 1604px) {
+@media(max-width: 1604px) {
   .discover-container > button {
     padding: 20px 30px;
     margin-top: 90px;
@@ -702,72 +694,70 @@ main .benefits {
 }
 
 .discover-coffe-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-}
+	margin-top: 30px;
 
-.discover-coffe-options > div {
-  height: 370px;
-  max-width: 310px;
-  text-align: center;
-  padding: 50px 8px;
-  background: var(--black-);
-}
+  > div {
+    height: 370px;
+    max-width: 310px;
 
-.discover-coffe-options > div + div {
-  margin-left: 27px;
-}
+    text-align: center;
 
-.discover-coffe-options > div h3, .discover-coffe-options > div p, .discover-coffe-options > div div {
-  color: var(--white-);
-}
+    padding: 50px 8px;
 
-.discover-coffe-options > div h3 {
-  font-family: 'Museo';
-  margin-top: 10px;
-}
+    background: var(--black-);
 
-.discover-coffe-options > div > p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+    & + div {
+      margin-left: 27px;
+    }
 
-.discover-coffe-options > div div {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Nexa Bold";
-  font-size: 1rem;
-  margin-top: 40px;
-}
+    h3, p, div {
+      color: var(--white-);
+    }
 
-.discover-coffe-options > div div div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 25px;
-  font-size: 1rem;
-}
+		h3 {
+			font-family: 'Museo';
+			margin-top: 10px;
+		}
 
-.discover-coffe-options > div div #counter {
-  margin: 0;
-  padding: 0 10px;
-}
+		> p {
+			font-size: 1rem;
+			line-height: 1.5;
+		}
 
-.discover-coffe-options > div button {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(150deg, #e4ca7f, #cc9544);
-  border-radius: 2px;
-  font-size: 2rem;
-  line-height: 1.1;
+    div {
+      align-items: center;
+			justify-content: center;
+
+      font-family: "Nexa Bold";
+			font-size: 1rem;
+
+			margin-top: 40px;
+
+			
+			div {
+				display: flex;
+				align-items: center;
+				
+				margin-top: 25px;
+				font-size: 1rem;
+			}
+
+			#counter {
+				margin: 0;
+				padding: 0 10px;
+			}
+    }
+
+    button {
+      width: 30px;
+      height: 30px;
+
+      background: linear-gradient(150deg, #e4ca7f, #cc9544);
+      border-radius: 2px;
+
+      font-size: 2rem;
+			line-height: 1.1;
+    }
+  }
 }
-/*# sourceMappingURL=styles.css.map */

@@ -34,9 +34,9 @@
         <img src="../assets/img/LogoPrime.png" alt="logo" class="logo" />
 				<div class="navigation-links">
 					<a href="#benefits">BENEFÍCIOS</a>
-					<a href="">FUNCIONAMENTO</a>
-					<a href="">PLANOS</a>
-					<a href="">DESCUBRA SEU PLANO</a>
+					<a href="#operation">FUNCIONAMENTO</a>
+					<a href="#plans">PLANOS</a>
+					<a href="#discover-your-plain">DESCUBRA SEU PLANO</a>
 					<a href="">FAQ</a>
 				</div>
 				<button>ASSINAR AGORA</button>
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 		</section>
-      <section class="plans">
+      <section class="plans" id="plans">
 				<h2>ESCOLHA SEU PLANO</h2>
 				<div class="plans-options">
 					<div class="monthly">
@@ -160,37 +160,42 @@
 				</div>
 				<p>*Planos Trimestral e Semestral não irão bloquear o limite do seu cartão e a cobrança será feita mensalmente.</p>
 			</section>
-      <section class="discover-your-plain">
+      <section class="discover-your-plain" id="discover-your-plain">
 				<h2>DESCUBRA O PLANO IDEAL PARA VOCÊ</h2>
-				<div class="discover-your-plain-container">
-					<div>
-						<div>
+				<div class="discover-container">
+					<div class="discover-wrapper">
+						<div class="discover-options first">
 							<h3><span>1.</span>ESCOLHA OS SABORES E A QUANTIDADE</h3>
-							<div>
-								<div>
-									<img src="" alt="">
+							<div class="discover-coffe-options">
+								<div> 
+									<img src="./assets/img/coffeprime.png" alt="SUPERCOFFE">
 									<h3>SUPERCOFFE 2.0</h3>
 									<p>Original 220g - 22 doses</p>
-									<div>Selecione a quantia desejada:
-										<button onclick="decrement"></button>
-										<div id='counter'>0</div>
-										<button onclick="increment"></button>
+									<div>
+										Selecione a quantia desejada:
+										<div>
+											<button onclick="decrement">-</button>
+											<div id='counter'>0</div>
+											<button onclick="increment">+</button>
+										</div>
 									</div>
 								</div>
 								<div>
-									<img src="" alt="">
+									<img src="./assets/img/coffeprime.png" alt="IMPOSSIBLE CHOCOLATE">
 									<h3>IMPOSSIBLE CHOCOLATE</h3>
 									<p>Original 220g - 22 doses</p>
 									<div>
 										Selecione a quantia desejada:
-										<button onclick="decrement"></button>
-										<div id='counter'>0</div>
-										<button onclick="increment"></button>
+										<div>
+											<button onclick="decrement">-</button>
+											<div id='counter'>0</div>
+											<button onclick="increment">+</button>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="discover-options second">
 							<h3><span>2.</span>ESCOLHA SEU PLANO</h3>
 							<ul>
 								<li>
