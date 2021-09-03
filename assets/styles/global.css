@@ -1,11 +1,13 @@
 :root {
     --white-: #fff;
-    --black-: #000;
     --grey-: #9b9a9a;
-
+    
     --golden-: #E4CA7F;
-
+    --golden-100-: #CC9544;
+    
+    --black-: #000;
     --black-100-: #191818;
+    --black-900-: #414141;
 }
 
 * {

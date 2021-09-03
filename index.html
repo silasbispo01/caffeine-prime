@@ -7,39 +7,46 @@
     <title>Caffeine Prime</title>
 	<link rel="stylesheet" href="../assets/styles/global.css">
 	<link rel="stylesheet" href="../assets/styles/styles.css">
-  </head>
+	<script src="https://kit.fontawesome.com/29352320b9.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/scripts.js"></script>
+</head>
   <body>
     <header class="header">
       <div class="access-header">
-        <img src="../assets/img/LogoCaffeine.png" alt="logo" class="logo" />
-        <div class="access-buttons-as-link">
-          <button>PRODUTOS</button>
-          <button>ONDE ENCONTRAR</button>
-          <button>BLOG</button>
-          <button>FALE CONOSCO</button>
-        </div>
-        <div class="access-individuals-buttons">
-          <button>
-            <img src="../assets/img/conta_outline.svg" alt="conta" />
-            Minha Conta
-          </button>
-          <button>
-            <img src="../assets/img/carrinho_outline.svg" alt="carrinho" />
-            Carrinho
-          </button>
-          <button>Sair</button>
-        </div>
-      </div>
-      <nav class="navigation-header sticky">
-        <img src="../assets/img/LogoPrime.png" alt="logo" class="logo" />
-				<div class="navigation-links">
-					<a href="#benefits">BENEFÍCIOS</a>
-					<a href="#operation">FUNCIONAMENTO</a>
-					<a href="#plans">PLANOS</a>
-					<a href="#discover-your-plain">DESCUBRA SEU PLANO</a>
-					<a href="">FAQ</a>
+				<div>
+						<img src="../assets/img/LogoCaffeine.png" alt="logo" class="logo" />
+						<div class="access-buttons-as-link">
+							<button>PRODUTOS</button>
+							<button>ONDE ENCONTRAR</button>
+							<button>BLOG</button>
+							<button>FALE CONOSCO</button>
+						</div>
+						<div class="access-individuals-buttons">
+							<button>
+								<img src="../assets/img/conta_outline.svg" alt="conta" />
+								Minha Conta
+							</button>
+							<button>
+								<img src="../assets/img/carrinho_outline.svg" alt="carrinho" />
+								Carrinho
+							</button>
+							<button>Sair</button>
+						</div>
+					</div>
 				</div>
-				<button>ASSINAR AGORA</button>
+      <nav class="navigation-header sticky">
+				<div>
+
+					<img src="../assets/img/LogoPrime.png" alt="logo" class="logo" />
+					<div class="navigation-links">
+						<a href="#benefits">BENEFÍCIOS</a>
+						<a href="#operation">FUNCIONAMENTO</a>
+						<a href="#plans">PLANOS</a>
+						<a href="#discover-your-plain">DESCUBRA SEU PLANO</a>
+						<a href="">FAQ</a>
+					</div>
+					<button>ASSINAR AGORA</button>
+				</div>
       </nav>
     </header>
     <main class="main">
@@ -83,6 +90,7 @@
 					<div class="explanation-group">
 						<h3>01</h3>
 						<div>
+							<div class="bg"></div>
 							<img src="../assets/img/config.svg" alt="Personalização">
 							<h3>PERSONALIZAÇÃO</h3>
 							<p>Escolha a duração do seu plano e aproveite as condições exclusivas de cada uma das opções. Faça do seu jeito e personalize com a quantidade e sabores que desejar.</p>
@@ -91,6 +99,7 @@
 					<div class="explanation-group">
 						<h3>02</h3>
 						<div>
+							<div class="bg"></div>
 							<img src="../assets/img/credit-card.svg" alt="Cartão de crédito">
 							<h3>PAGAMENTO</h3>
 							<p>A assinatura é recorrente e com cobrança automática mensal. Para os programas com fidelidade, pode ficar tranquilo que nenhum limite será bloqueado no seu cartão.</p>
@@ -99,6 +108,7 @@
 					<div class="explanation-group">
 						<h3>03</h3>
 						<div>
+							<div class="bg"></div>
 							<img src="../assets/img/box.svg" alt="Caixa">
 							<h3>ENTREGA</h3>
 							<p>Sua caixa Prime chegará mensalmente no endereço cadastrado, com a comodidade de não se preocupar com seu estoque e a segurança que ele não vai acabar!</p>
@@ -174,9 +184,9 @@
 									<div>
 										Selecione a quantia desejada:
 										<div>
-											<button onclick="decrement">-</button>
+											<button class='decrement'>-</button>
 											<div id='counter'>0</div>
-											<button onclick="increment">+</button>
+											<button  class='increment'>+</button>
 										</div>
 									</div>
 								</div>
@@ -187,9 +197,9 @@
 									<div>
 										Selecione a quantia desejada:
 										<div>
-											<button onclick="decrement">-</button>
+											<button class='decrement'>-</button>
 											<div id='counter'>0</div>
-											<button onclick="increment">+</button>
+											<button class='increment'>+</button>
 										</div>
 									</div>
 								</div>
@@ -228,19 +238,107 @@
       <section class="faq">
 				<h2>PERGUNTAS FREQUENTES</h2>
 				<div class="faq-accordion">
-					<button class="accordion">O que é a Caffeine Prime?</button>
+					<button class="accordion">O que é a Caffeine Prime?
+						<i class="fas fa-chevron-down"></i>
+					</button>
 					<div class="panel">
-						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+						<p>
+							Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+						</p>
 					</div>
+					<button class="accordion">Para quem a Caffeine Prime é ideal?
+						<i class="fas fa-chevron-down"></i>
+					</button>
+					<div class="panel">
+						<p>
+							Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+						</p>
+						</div>
+					</div>
+				<button class="accordion">Se eu não assinar agora, poderei assinar o serviço em outro momento?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Como posso contratar a assinatura Caffeine Prime?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Posso comprar qualquer produto da Caffeine Army?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Como é feita a cobrança da assinatura?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">A assinatura é renovada automaticamente na finalização do plano que escolhi?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Posso trocar meu endereço, sabor do produto ou o cartão de crédito em que fiz o pagamento, após contratada a assinatura?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Posso utilizar cupom de desconto na compra da assinatura?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Posso cancelar a assinatura?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
+				</div>
+				<button class="accordion">Tenho canais exclusivos para contato com o time da Caffeine Army?
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="panel">
+					<p>
+						Caffeine Prime é um serviço inédito oferecido pela Caffeine Army, na qual você poderá aproveitar todos os benefícios oferecidos pelo SuperCoffee, com condições exclusivas! Com essa experiência Prime, você ganha mais e gasta muito menos! Dentre as principais vantagens da Caffeine Prime, podemos destacar o desconto nos valores dos planos e o frete grátis para qualquer lugar do Brasil. Além disso, a assinatura garante a renovação contínua do estoque de SuperCoffee em sua casa.
+					</p>
 				</div>
 			</section>
     </main>
-    <footer>
-			<div>
+    <footer class="footer">
+			<div class="footer-container">
 				<div>
 					<h2>CAFFEINE ARMY</h2>
 					<p>Encontre uma loja</p>
 					<p>Fale conosco</p>
+
+					<div>
+
+					</div>
 				</div>
 				<div>
 					<h2>ÁREA DO CLIENTE</h2>
@@ -274,11 +372,13 @@
 					</form>
 				</div>
 			</div>
-			<div>
-				<a href="#">Política de Entrega</a>
-				<a href="#">Política de Privacidade</a>
-				<a href="#">Política de Troca e Devolução</a>
-				<p>© 2021 Caffeine Army. CNPJ: 27.403.527/0001-13</p>
+			<div class="footer-footer">
+				<div>
+					<a href="#">Política de Entrega</a>
+					<a href="#">Política de Privacidade</a>
+					<a href="#">Política de Troca e Devolução</a>
+					<p>© 2021 Caffeine Army. CNPJ: 27.403.527/0001-13</p>
+				</div>
 			</div>
 		</footer>
   </body>
