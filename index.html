@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caffeine Prime</title>
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../assets/styles/global.css">
 	<link rel="stylesheet" href="../assets/styles/styles.css">
 	<script src="https://kit.fontawesome.com/29352320b9.js" crossorigin="anonymous"></script>
 	<script src="./assets/js/scripts.js"></script>
 </head>
   <body>
-    <header class="header">
+    <header class="header sticky">
       <div class="access-header">
 				<div>
 						<img src="../assets/img/LogoCaffeine.png" alt="logo" class="logo" />
@@ -34,7 +35,7 @@
 						</div>
 					</div>
 				</div>
-      <nav class="navigation-header sticky">
+      <nav class="navigation-header">
 				<div>
 
 					<img src="../assets/img/LogoPrime.png" alt="logo" class="logo" />
@@ -116,7 +117,7 @@
 					</div>
 				</div>
 		</section>
-      <section class="plans" id="plans">
+      <section class="plans one" id="plans">
 				<h2>ESCOLHA SEU PLANO</h2>
 				<div class="plans-options">
 					<div class="monthly">
@@ -132,7 +133,7 @@
 								<p>
 									Assinatura recorrente com cobrança automática mensal.
 								</p>
-								<button>ASSINAR AGORA</button>
+								<button class="assign-button monthly">ASSINAR AGORA</button>
 							</div>
 					</div>
 					<div class="quarterly">
@@ -148,7 +149,7 @@
 								<p>
 									Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 3 meses.
 								</p>
-								<button>ASSINAR AGORA</button>
+								<button class="assign-button quarterly">ASSINAR AGORA</button>
 						</div>
 					</div>
 					<div class="semester">
@@ -164,12 +165,55 @@
 							<p>
 								Assinatura recorrente com cobrança automática mensal. Prazo mínimo de adesão de 6 meses.
 							</p>
-							<button>ASSINAR AGORA</button>
+							<button class="assign-button semester">ASSINAR AGORA</button>
 						</div>
 					</div>
 				</div>
 				<p>*Planos Trimestral e Semestral não irão bloquear o limite do seu cartão e a cobrança será feita mensalmente.</p>
 			</section>
+      <section class="plans two closed">
+        <h2>ESCOLHA OS SABORES E A QUANTIDADE</h2>
+        <div class="plans-two-options">
+          <div class="plans-two-list-wrapper">
+            <div class="list-item">
+              <div>
+                <img src="./assets/img/coffeprimewhite.png" alt="suppercoffe prime">
+                <div>
+                  <h3>SUPERCOFFE 2.0</h3>
+                  <p>Original 220g - 22 doses</p>
+                </div>
+              </div>
+              <div>
+                <button>-</button>
+                <div class="counter">0</div>
+                <button>+</button>
+              </div>
+            </div>
+              <div class="list-item">
+              <div>
+                <img src="./assets/img/coffeprimewhite.png" alt="suppercoffe prime">
+                <div>
+                  <h3>SUPERCOFFE 2.0</h3>
+                  <p>Original 220g - 22 doses</p>
+                </div>
+              </div>
+              <div>
+                <button>-</button>
+                <div class="counter">0</div>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="plans-two-resume">
+            <p>R$ XX,XX</p>
+            <div>
+              <h3>Total</h3>
+              <h3>R$ XX,XX/mês</h3>
+            </div>
+            <button>ASSINAR POR R$ XX,XX/MÊS</button>
+          </div>
+        </div>
+      </section>
       <section class="discover-your-plain" id="discover-your-plain">
 				<h2>DESCUBRA O PLANO IDEAL PARA VOCÊ</h2>
 				<div class="discover-container">
@@ -331,21 +375,34 @@
     </main>
     <footer class="footer">
 			<div class="footer-container">
-				<div>
+				<div class="footer-content">
 					<h2>CAFFEINE ARMY</h2>
 					<p>Encontre uma loja</p>
 					<p>Fale conosco</p>
 
-					<div>
-
+					<div class="bottom">
+            <div>
+              <img src="./assets/img/footer/facebook.svg" alt="facebook logo">
+              <img src="./assets/img/footer/instagram.svg" alt="instagram logo">
+            </div>
+            <p>#NADAVAIMEPARAR</p>
+            <div class="cards">
+              <img src="./assets/img/footer/unnamed (1).png" alt="boleto">
+              <img src="./assets/img/footer/visa.svg" alt="visa">
+              <img src="./assets/img/footer/mastercard.svg" alt="mastercard">
+              <img src="./assets/img/footer/American-Express-Logo-1.png" alt="american express">
+              <img src="./assets/img/footer/1200px-Hipercard_logo.svg.png" alt="hipercard">
+              <img src="./assets/img/footer/Elo_logo.png" alt="elo">
+            </div>
+            <p>DIVIDA EM ATÉ 3X</p>
 					</div>
 				</div>
-				<div>
+				<div class="footer-content">
 					<h2>ÁREA DO CLIENTE</h2>
 					<p>Meus pedidos</p>
 					<p>Assinatura</p>
 				</div>
-				<div>
+				<div class="footer-content">
 					<h2>COMPRAR</h2>
 					<p>SuperCoffee 2.0</p>
 					<p>SuperCoffee Impossible Chocolate</p>
@@ -354,7 +411,7 @@
 					<p>SupperCoffe Impossible Chocolate Economic Size</p>
 					<p>Caffeine Prime</p>
 				</div>
-				<div>
+				<div class="footer-content">
 					<h2>CAFFEINE ACADEMY</h2>
 					<p>Corpo</p>
 					<p>Mente</p>
@@ -363,11 +420,11 @@
 					<p>Espiritualidade</p>
 					<p>Receitas</p>
 				</div>
-				<div>
+				<div class="footer-content">
 					<h2>Assine nossa Newsletter</h2>
 					<p>Assine nossa newsletter e receba acesso antecipado a ofertas especiais, conteúdos, receitas e dicas de como alcançar a sua melhor versão.</p>
 					<form>
-						<input type="text">
+						<input type="text" placeholder="Seu melhor e-mail…">
 						<button>ASSINAR!</button>
 					</form>
 				</div>

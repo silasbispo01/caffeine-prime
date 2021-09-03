@@ -5,7 +5,23 @@ header {
   font-size: 1.375rem;
 
   justify-content: center;
+
+  z-index: 1000;
 }
+
+.header.sticky .access-header{
+  display: none;
+}
+
+.header.sticky{
+  position: fixed;
+  top: 0;
+}
+
+.header.sticky + main {
+  padding-top: 170px;
+}
+
 
 .access-header {
   padding: 0 10px;
@@ -419,8 +435,12 @@ main .benefits {
 
 /* ESCOLHA SEU PLANO */
 
+.plans.one.closed { 
+  display: none;
+}
+
 .plans {
-  background: url(../img/bg-plans.png) no-repeat;
+  background: url(../img/bg-plans.png) no-repeat center;
 
   color: var(--white-);
 }
@@ -566,8 +586,161 @@ main .benefits {
 
 /*  ============ COM SASS ============ */
 
+/* PLANS OPTIONS 2 - APÓS CLICAR ASSINAR AGORA */
+
+.plans.two.closed {
+  display: none;
+}
+
+.plans.two {
+  height: 877px;
+
+  .plans-two-options {
+    margin: 70px auto 100px;
+    max-width: 756px;
+  }
+
+  .plans-two-list-wrapper {
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background: var(--white-);
+
+      padding: 20px 50px;
+      border-radius: 4px; 
+
+      & + .list-item {
+        margin-top: 35px;
+      }
+
+      div {
+        &:first-child {
+          color: #414141;
+
+          display: flex;
+          align-items: center;
+  
+          div {
+            flex-direction: column;
+            margin-left: 6px;
+          }
+          
+          h3 {
+            font-size: 1.25rem;
+            font-family: 'Nexa Bold';
+          }
+
+          p {
+            font-size: 1.25rem;
+          }
+        }
+
+        &:last-child {
+          display: flex;
+
+          button {
+            width: 40px;
+            height: 40px;
+
+            background: #F2F2F2;
+
+            font-size: 40px;
+            line-height: 1.1;
+
+            color: var(--grey-);
+          }
+
+          .counter {
+            align-self: center;
+            color: #414141;
+
+            font-size: 1.625rem;
+            padding: 0 10px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .plans-two-resume {
+    margin-top: 35px;
+    padding: 20px 0;
+    width: 100%;
+
+    border-top: 1px solid var(--white-);
+
+    display: flex;
+    flex-direction: column;
+
+    > p {
+      text-align: right;
+      font-size: 1.25rem;
+
+      text-decoration: line-through;
+    }
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+
+    button {
+      margin-top: 60px;
+
+      height: 70px;
+		  padding: 0 30px;
+
+      width: fit-content;
+      align-self: center;
+
+      font-family: 'Nexa Bold';
+      font-size: 1.5rem;
+
+      background: linear-gradient(150deg, #e4ca7f, #cc9544);
+
+		  border-radius: 4px;
+
+      transition: filter 0.1s;
+
+      &:hover {
+        filter: brightness(0.7);
+      }
+    }
+  }
+}
+
+.plans.two {
+  .plans-two-resume {
+    > p:after {
+      content: '10%';
+
+      color: var(--white-);
+
+      font-size: 1.450rem;
+      font-family: 'Nexa Bold';
+
+      background: var(--golden-100);
+      width: fit-content;
+      height: 30px;
+
+      margin-left: 5px;
+
+      text-decoration: none;
+    }
+  }
+}
+/* DESCUBRA SEU PLANO */
+
 .discover-your-plain {
-  padding: 0 140px;
 
   > h2 {
     text-align: center;
@@ -586,8 +759,10 @@ main .benefits {
   background: var(--black-100-);
   padding: 70px;
 
-  width: 100%;
+  max-width: 1641px;
   height: 761px;
+
+  margin: 0 auto;
 
   > button {
 		height: 70px;
@@ -908,15 +1083,10 @@ main .benefits {
     display: flex;
     justify-content: space-between;
 
-    div {
+    .footer-content {
       color: var(--white-);
       max-width: 230px;
       height: auto;
-
-
-      &:nth-child(1) {
-        
-      }
 
       &:nth-child(n + 4) {
         width: 100%;
@@ -924,9 +1094,45 @@ main .benefits {
 
       &:nth-child(5) {
         max-width: 400px;
+
+        form {
+          display: flex;
+          margin-top: 10px;
+          
+          input {
+            width: 100%;
+            height: 45px;
+
+            background: var(--white-);
+            color: var(--black-);
+
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+
+            padding: 0 25px;
+
+            font-size: 1rem;
+
+            outline: none;
+          }
+
+          button {
+            color: var(--black-);
+
+            max-width: 112px;
+            height: 45px;
+
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+
+            background: linear-gradient(150deg, var(--golden-), var(--golden-100-));
+
+            font-family: 'Nexa Bold';
+
+            padding: 0 25px;
+          }
+        }
       }
-
-
 
       h2 {
         font-family: 'Nexa Bold';
@@ -935,41 +1141,114 @@ main .benefits {
         line-height: 2;
       }
 
-      p {
+      > p {
         filter: brightness(0.7);
         font-size: 1.125rem;
+
+        cursor: pointer;
+        transition: filter 0.1s;
+
+        &:hover {
+          filter: brightness(0.5);
+        }
       }
+
+      &:last-child {
+        > p:hover {
+          cursor: initial;  
+          filter: brightness(0.7);
+        }
+      }
+    }   
+  }
+
+  .footer-footer {
+    width: 100%;
+    height: 100px;
+
+    border-top: 1px solid var(--white-);
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      height: inherit;
+
+      margin: 0 auto;
+      max-width: 1120px;
+    }
+
+    a, p {
+      color: var(--white-);
+      text-decoration: none;
+
+      font-size: 1.1rem;
+    }
+
+    a {
+      font-family: 'Nexa Bold';
+    }
+  }
+}
+
+.bottom {
+  margin-top: 50px;
+
+  p {
+    line-height: 2;
+    font-size: 1rem;
+    
+    color: var(--white-);
+    filter: brightness(1);
+
+    margin-top: 5px;
+
+    &:last-child {
+      font-family: 'Nexa Bold';
     }
     
   }
 
-    .footer-footer {
-      width: 100%;
-      height: 100px;
+  div:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      
+      
+      max-width: 175px;
+      margin-top: 25px;
+      
+      img {
+        height: auto;
+        max-width: 25px;
 
-      border-top: 1px solid var(--white-);
-
-      div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        height: inherit;
-
-        margin: 0 auto;
-        max-width: 1120px;
-      }
-
-      a, p {
-        color: var(--white-);
-        text-decoration: none;
-
-        font-size: 1.1rem;
-      }
-
-      a {
-        font-family: 'Nexa Bold';
+        cursor: pointer;
+        
+        & + img {
+          margin-left: 10px;
       }
     }
-}
+  }
+    
+  .cards {
+    display: grid;
 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    max-width: auto;
+
+    margin-top: 25px;
+
+    img {
+      width: 70px;
+      height: 30px;
+      
+      background: var(--white-);
+      object-fit: contain;
+
+      padding: 5px 15px;
+      border-radius: 4px;
+    }
+  }
+}

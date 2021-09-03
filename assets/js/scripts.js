@@ -1,5 +1,18 @@
 window.onload = () => {
 
+    // HEADER STICKY 
+
+    let header = document.querySelector('.header');
+
+    window.onscroll = () => {
+        if (window.pageYOffset >= 90) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        
+    }
+
     // FUNÇÃO DO ACCORDION 
     
     let acc = document.querySelectorAll('.accordion');
@@ -14,6 +27,7 @@ window.onload = () => {
     })
 
     // FUNÇÃO DO CONTADOR DE CAFÉ ESCOLHIDO
+    // "selecione a quantia desejada"
 
     let incrementButton = document.querySelectorAll('.increment');
     let decrementButton = document.querySelectorAll('.decrement');
@@ -41,4 +55,32 @@ window.onload = () => {
             counter.innerText = counterValue - 1;
         }
     };   
+
+    // PLANS FUNCTION
+
+    let assignButton = document.querySelectorAll('.assign-button');  
+    
+    let plansSection = document.querySelectorAll('.plans')
+
+    assignButton.forEach(button => {
+        button.onclick = () => {
+
+            switch(button.classList[1]) {
+                case 'monthly': 
+                    plansSection[1].classList.add('monthly-section');
+                    break;
+                case 'quarterly':
+                    plansSection[1].classList.add('quarterly-section');
+                    break;
+                case 'semester':
+                    plansSection[1].classList.add('semester-section');
+                    break;
+            }
+
+            plansSection[0].classList.add('closed');
+            plansSection[1].classList.remove('closed');
+        }
+    })
+
+
 }
