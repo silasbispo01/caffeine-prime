@@ -252,6 +252,12 @@ main .discover {
   }
 }
 
+@media (max-width: 1200px) {
+  main .discover {
+    padding: 200px 30px;
+  }
+}
+
 /* BENEFÍCIOS DO CAFFEINE PRIME */
 main .benefits {
   padding: 90px 100px 0 100px;
@@ -461,17 +467,12 @@ main .benefits {
 }
 
 .explanation-group div .bg {
-  display: none;
+  display: block;
+  background: url(../img/circle.svg) no-repeat center;
+  background-size: contain;
   position: absolute;
   left: -20px;
-}
-
-@media (min-width: 1920px) {
-  .explanation-group div .bg {
-    display: block;
-    width: 390px;
-    background: url(../img/circle.svg) no-repeat center;
-  }
+  width: 390px;
 }
 
 .explanation-group div img {
@@ -506,7 +507,8 @@ main .benefits {
     font-size: 1.35rem;
   }
   .explanation-group div p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    width: 80%;
   }
   .explanation-group div .bg {
     width: 300px;
@@ -534,6 +536,28 @@ main .benefits {
   }
 }
 
+@media (max-width: 1200px) {
+  .explanations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .explanation-group {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .explanation-group + .explanation-group {
+    margin-top: 20px;
+  }
+  .explanation-group div .bg {
+    display: block;
+    width: 340px;
+    background-size: contain;
+  }
+}
+
 /* ESCOLHA SEU PLANO */
 .plans.one.closed {
   display: none;
@@ -556,15 +580,6 @@ main .benefits {
   color: var(--white-);
 }
 
-@media (max-width: 768px) {
-  .plans-options {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .plans-options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +587,13 @@ main .benefits {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  .plans-options {
+    display: -webkit-box;
+    overflow-x: auto;
+  }
 }
 
 /* MONTHLY, QUARTERLY, SEMESTER */
@@ -1027,6 +1049,51 @@ main .benefits {
   }
 }
 
+@media (max-width: 1200px) {
+  .discover-container {
+    height: auto;
+  }
+  .discover-container > button {
+    padding: 0 20px;
+    font-size: 1.25rem;
+  }
+  .discover-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .discover-options.first {
+    padding-right: 0;
+    border: none;
+  }
+  .discover-options.second {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  .discover-options ul {
+    margin-top: 30px;
+  }
+  .discover-coffe-options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover-coffe-options > div {
+    width: 100%;
+    max-height: 310px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .discover-coffe-options div:last-child {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
 .discover-coffe-options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1275,7 +1342,7 @@ main .benefits {
 
 .footer .footer-footer {
   width: 100%;
-  height: 100px;
+  padding: 20px 30px;
   border-top: 1px solid var(--white-);
 }
 
@@ -1360,5 +1427,57 @@ main .benefits {
      object-fit: contain;
   padding: 5px 15px;
   border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  .footer .footer-container .footer-content:nth-child(5) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer .footer-container .footer-content:nth-child(5) p {
+    display: block;
+  }
+  .footer .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 500px;
+    padding: 20px 30px;
+  }
+  .footer .footer-container .footer-content:last-child {
+    border-top: none;
+    margin-bottom: 20px;
+  }
+  .footer .footer-container .footer-content {
+    border-top: 1px solid var(--white-);
+  }
+  .footer .footer-container .footer-content p {
+    display: none;
+  }
+  .footer .footer-container .footer-content .bottom {
+    display: none;
+  }
+  .footer .footer-footer > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 30px;
+    max-width: 500px;
+  }
+  .footer .footer-footer > div a {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .footer .footer-footer > div a + a {
+    margin-top: 20px;
+  }
+  .footer .footer-footer > div p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
