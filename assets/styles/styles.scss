@@ -231,7 +231,7 @@ main .discover {
   background: linear-gradient(150deg, rgba(228, 202, 127, 0.5), rgba(203, 149, 67, 0.5));
 }
 
-@media  (max-width: 1430px) { 
+@media(max-width: 1430px) { 
   .discover p {
     font-size: 2.5rem;
     max-width: 500px;
@@ -241,9 +241,27 @@ main .discover {
   }
 }
 
-@media  (max-width: 1200px) {
+@media(max-width: 1200px) {
   main .discover {
     padding: 200px 30px;
+  }
+}
+
+@media(max-width: 890px) {
+  main .discover {
+    padding: 200px 30px 100px;
+  }
+
+  .discover p {
+    max-width: none;
+  }
+
+  .discover p span {
+    display: block;
+  }
+
+  .discover button {
+    width: 100%;
   }
 }
 
@@ -367,6 +385,11 @@ main .benefits {
   align-self: center;
 }
 
+.benefits-group hr {
+  border-color: var(--golden-);
+  margin: 20px 0;
+}
+
 @media  (max-width: 1430px) { 
   .benefits h2 {
     font-size: 2.5rem;
@@ -398,9 +421,48 @@ main .benefits {
   }
 }
 
-.benefits-group hr {
-  border-color: var(--golden-);
-  margin: 20px 0;
+
+@media(max-width: 890px) {
+  main .benefits {
+    padding: 90px 30px 100px;
+  }
+  .benefits-content {
+    background: none;
+  }
+
+  .benefits-content div {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+  }
+  .benefits-content div h3 {
+    align-self: flex-start;
+  }
+
+  .benefits-content div:nth-child(2) div hr {
+    display: none;
+  }
+
+  .benefits-content div:nth-child(2) .benefits-group h3,
+  .benefits-content div:nth-child(2) .benefits-group p {
+    text-align: left;
+  }
+
+  .benefits-content div:nth-child(2) img {
+    order: -1;
+  }
+
+  .benefits-content div img {
+    margin: 0!important;
+
+    max-width: 300px;
+    height: auto;
+  }
+
+  .benefits-group {
+    padding: 0;
+  }
 }
 
 /* COMO FUNCIONA O CAFFEINE PRIME */
@@ -561,6 +623,33 @@ main .benefits {
     background-size: contain;
   }
 }
+
+@media(max-width: 890px) {
+  .explanation-group div .bg {
+    width: 280px;
+
+    left: -50px;
+  }
+
+  .explanation-group h3 {
+    width: 70px;
+  }
+
+  .explanation-group div img {
+    width: 30px;
+    height: 30px;
+
+    margin-bottom: 10px;
+  }
+
+  .explanation-group:nth-child(n + 2) > h3 {
+    margin-left: 0;
+  }
+
+  .explanations {
+    padding: 80px 30px;
+  }
+} 
 /* ESCOLHA SEU PLANO */
 
 .plans.one.closed { 
@@ -602,7 +691,11 @@ main .benefits {
 @media (max-width: 1200px) {
   .plans-options {
     display: -webkit-box;
-    overflow-x: auto;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
   }
 }  
 
@@ -738,6 +831,12 @@ main .benefits {
     font-size: 2.5rem;
   }
 
+}
+
+@media(max-width: 890px) {
+  .plans h2 {
+    font-size: 1.5rem;
+  }
 }
 /*  ============ COM SASS ============ */
 
@@ -893,6 +992,7 @@ main .benefits {
     }
   }
 }
+
 /* DESCUBRA SEU PLANO */
 
 .discover-your-plain {
@@ -1055,7 +1155,7 @@ main .benefits {
 
 @media(max-width: 1366px) {
   .discover-your-plain > h2 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .discover-options > h3 {
@@ -1114,6 +1214,13 @@ main .benefits {
       margin-top: 20px;
       margin-left: 0;
     }
+  }
+}
+
+@media(max-width: 890px) {
+  .discover-your-plain > h2 {
+    font-size: 1.5rem;
+    margin-inline: 40px;
   }
 }
 
@@ -1265,6 +1372,27 @@ main .benefits {
     
     p {
       margin: 0 40px;
+    }
+  }
+}
+
+@media(max-width: 890px) {
+  .faq {
+    padding: 0 30px;
+
+    .accordion {
+      font-size: 1.25rem;
+      padding: 0 20px;
+    }
+
+    .panel {
+      p {
+        margin: 0 20px; 
+      }
+
+      &.active {
+        padding: 10px 0;
+      }
     }
   }
 }
