@@ -14,6 +14,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -34,7 +37,7 @@ html {
 
 @font-face {
     font-family: 'Nexa';
-    src: url('./font/Nexa Light.otf') format('opentype');
+    src: url('./font/NexaLight.otf') format('opentype');
     font-weight: normal;
 }
 

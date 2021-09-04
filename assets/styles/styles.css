@@ -2,7 +2,6 @@
 /* ============= PARTE SEM SASS ============= */
 header {
   width: 100%;
-  font-size: 1.375rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -37,6 +36,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+}
+
+.access-header div img:first-child {
+  display: none;
+  width: 36px;
+  height: 36px;
 }
 
 @media (max-width: 1366px) {
@@ -154,6 +159,50 @@ header {
           filter: brightness(0.7);
 }
 
+@media (max-width: 1430px) {
+  .access-buttons-as-link button,
+  .navigation-links a {
+    font-size: 14px;
+  }
+  .access-header div,
+  .navigation-header div {
+    max-width: 1280px;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    position: fixed;
+  }
+  .header.sticky .access-header {
+    display: block;
+  }
+  .navigation-header {
+    display: none;
+  }
+  .access-header div {
+    padding: 0 30px;
+  }
+  .access-header div img:first-child {
+    display: block;
+  }
+  .header.sticky + main {
+    padding-top: 0px;
+  }
+  .access-header div div {
+    display: none;
+  }
+  .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: auto;
+  }
+}
+
 /* ======= MAIN E SECTIONS ======= */
 main .discover {
   background: url(../img/bg-discover.png) no-repeat center;
@@ -170,7 +219,7 @@ main .discover {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 20px;
-  width: 670px;
+  max-width: 670px;
 }
 
 .discover p span {
@@ -191,6 +240,16 @@ main .discover {
 .discover button:hover {
   color: var(--white-);
   background: linear-gradient(150deg, rgba(228, 202, 127, 0.5), rgba(203, 149, 67, 0.5));
+}
+
+@media (max-width: 1430px) {
+  .discover p {
+    font-size: 2.5rem;
+    max-width: 500px;
+  }
+  .discover button {
+    font-size: 1.5rem;
+  }
 }
 
 /* BENEFÍCIOS DO CAFFEINE PRIME */
@@ -309,6 +368,21 @@ main .benefits {
       align-self: center;
 }
 
+@media (max-width: 1430px) {
+  .benefits h2 {
+    font-size: 2.5rem;
+  }
+  .benefits-group h3 {
+    font-size: 1.5rem;
+  }
+  .benefits-group p {
+    font-size: 1.25rem;
+  }
+  .benefits-content div img {
+    height: 350px;
+  }
+}
+
 @media (max-width: 1280px) {
   .benefits h2 {
     font-size: 2.5rem;
@@ -387,14 +461,15 @@ main .benefits {
 }
 
 .explanation-group div .bg {
-  background-size: 100% contain;
+  display: none;
   position: absolute;
   left: -20px;
 }
 
 @media (min-width: 1920px) {
   .explanation-group div .bg {
-    width: 24.375rem;
+    display: block;
+    width: 390px;
     background: url(../img/circle.svg) no-repeat center;
   }
 }
@@ -416,6 +491,28 @@ main .benefits {
   max-width: 300px;
 }
 
+@media (max-width: 1430px) {
+  .operation h2 {
+    font-size: 2.5rem;
+  }
+  .explanation-group > h3 {
+    font-size: 5rem;
+  }
+  .explanation-group div img {
+    height: 45px;
+    width: 45px;
+  }
+  .explanation-group div h3 {
+    font-size: 1.35rem;
+  }
+  .explanation-group div p {
+    font-size: 1.1rem;
+  }
+  .explanation-group div .bg {
+    width: 300px;
+  }
+}
+
 @media (max-width: 1366px) {
   .operation h2 {
     font-size: 2.5rem;
@@ -426,22 +523,14 @@ main .benefits {
   .explanation-group > h3 {
     font-size: 4.5rem;
   }
-  .explanation-group div img {
-    height: 35px;
-    width: 35px;
-    margin-bottom: 15px;
+  .explanation-group div .bg {
+    width: 325px;
   }
   .explanation-group div h3 {
     font-size: 1.25rem;
   }
   .explanation-group div p {
     font-size: 1rem;
-  }
-  .explanation-group div {
-    background: none;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 
@@ -586,6 +675,22 @@ main .benefits {
 .semester > p {
   background: linear-gradient(150deg, #e4ca7f, #cc9544);
   color: var(--black-);
+}
+
+@media (max-width: 1430px) {
+  .plans h2 {
+    font-size: 2.25rem;
+  }
+  .plans-options > div > p,
+  .plans-options button {
+    font-size: 1rem;
+  }
+  .plans-amount h3 {
+    font-size: 1.5rem;
+  }
+  .plans-amount > span {
+    font-size: 2.5rem;
+  }
 }
 
 /*  ============ COM SASS ============ */
@@ -1054,7 +1159,8 @@ main .benefits {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
   color: var(--white-);
   overflow: hidden;
   -webkit-transition: all 0.3s ease-out;
@@ -1120,6 +1226,7 @@ main .benefits {
   padding: 0 25px;
   font-size: 1rem;
   outline: none;
+  cursor: initial;
 }
 
 .footer .footer-container .footer-content:nth-child(5) form button {
@@ -1135,14 +1242,15 @@ main .benefits {
 
 .footer .footer-container .footer-content h2 {
   font-family: 'Nexa Bold';
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 2;
 }
 
 .footer .footer-container .footer-content > p {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
-  font-size: 1.125rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
   cursor: pointer;
   -webkit-transition: -webkit-filter 0.1s;
   transition: -webkit-filter 0.1s;
@@ -1153,6 +1261,10 @@ main .benefits {
 .footer .footer-container .footer-content > p:hover {
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
+}
+
+.footer .footer-container .footer-content:last-child > p {
+  line-height: 1.2;
 }
 
 .footer .footer-container .footer-content:last-child > p:hover {
