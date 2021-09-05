@@ -1029,6 +1029,17 @@ main .benefits {
   .plans.two .plans-two-list-wrapper .list-item {
     padding: 20px 20px;
   }
+  .plans.two .plans-two-list-wrapper .list-item { 
+    flex-direction: column;
+
+    div:last-child {
+      margin-top: 20px;
+    }
+  }
+  .plans.two .plans-two-resume button {
+    font-size: 1rem;
+    height: 40px;
+  }
 }
 /* DESCUBRA SEU PLANO */
 
@@ -1257,6 +1268,10 @@ main .benefits {
 }
 
 @media(max-width: 890px) {
+  .discover-container {
+    padding: 70px 30px;
+  }
+
   .discover-your-plain > h2 {
     font-size: 1.875rem;
     margin-inline: 40px;
@@ -1444,7 +1459,7 @@ main .benefits {
   width: 100%;
   background: var(--black-900-);
 
-  margin-top: 200px;
+  margin-top: 100px;
   
   .footer-container {
     max-width: 1344px;
