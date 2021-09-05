@@ -1000,26 +1000,26 @@ main .benefits {
   }
 }
 
-.plans.two {
-  .plans-two-resume {
-    > p:after {
-      content: '10%';
+// .plans.two {
+//   .plans-two-resume {
+//     > p:after {
+//       content: '10%';
 
-      color: var(--white-);
+//       color: var(--white-);
 
-      font-size: 1.450rem;
-      font-family: 'Nexa Bold';
+//       font-size: 1.450rem;
+//       font-family: 'Nexa Bold';
 
-      background: var(--golden-100);
-      width: fit-content;
-      height: 30px;
+//       background: var(--golden-100);
+//       width: fit-content;
+//       height: 30px;
 
-      margin-left: 5px;
+//       margin-left: 5px;
 
-      text-decoration: none;
-    }
-  }
-}
+//       text-decoration: none;
+//     }
+//   }
+// }
 
 @media (max-width: 1200px) {
   .plans.two .plans-two-options {
@@ -1674,7 +1674,7 @@ main .benefits {
     }
 
     .footer-content {
-      border-top: 1px solid var(--white-);
+      border-top: 2px solid var(--grey-);
 
       p {
         display: none;
@@ -1706,5 +1706,11 @@ main .benefits {
         margin-top: 20px;
       }
     }
+  }
+}
+
+@media (max-width: 890px) {
+  .footer .footer-container .footer-content {
+    max-width: 100%;
   }
 }
