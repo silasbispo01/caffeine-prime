@@ -185,6 +185,7 @@ header {
   }
   .access-header div {
     padding: 0 30px;
+    height: 73px;
   }
   .access-header div img:first-child {
     display: block;
@@ -264,12 +265,15 @@ main .discover {
   }
   .discover p {
     max-width: none;
+    font-size: 1.75rem;
   }
   .discover p span {
     display: block;
   }
   .discover button {
     width: 100%;
+    height: 45px;
+    line-height: 0;
   }
 }
 
@@ -426,10 +430,15 @@ main .benefits {
 
 @media (max-width: 890px) {
   main .benefits {
-    padding: 90px 30px 100px;
+    padding: 30px 30px 100px;
   }
   .benefits-content {
     background: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .benefits h2 {
+    font-size: 2.25rem;
   }
   .benefits-content div {
     -webkit-box-orient: vertical;
@@ -617,6 +626,17 @@ main .benefits {
 }
 
 @media (max-width: 890px) {
+  .operation h2 {
+    font-size: 2.25rem;
+  }
+  .explanation-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .explanation-group div {
+    width: 65%;
+  }
   .explanation-group div .bg {
     width: 280px;
     left: -50px;
@@ -633,7 +653,7 @@ main .benefits {
     margin-left: 0;
   }
   .explanations {
-    padding: 80px 30px;
+    padding: 30px 30px;
   }
 }
 
@@ -798,6 +818,9 @@ main .benefits {
 }
 
 @media (max-width: 890px) {
+  .plans-options > div > p {
+    height: auto;
+  }
   .plans h2 {
     font-size: 1.5rem;
   }
@@ -959,6 +982,18 @@ main .benefits {
   height: 30px;
   margin-left: 5px;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .plans.two .plans-two-options {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 890px) {
+  .plans.two .plans-two-list-wrapper .list-item {
+    padding: 20px 20px;
+  }
 }
 
 /* DESCUBRA SEU PLANO */
@@ -1144,6 +1179,7 @@ main .benefits {
   .discover-container > button {
     padding: 0 20px;
     font-size: 1.25rem;
+    margin-top: 10px;
   }
   .discover-wrapper {
     -webkit-box-orient: vertical;
@@ -1184,7 +1220,7 @@ main .benefits {
 
 @media (max-width: 890px) {
   .discover-your-plain > h2 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     margin-inline: 40px;
   }
 }
@@ -1342,6 +1378,9 @@ main .benefits {
 @media (max-width: 890px) {
   .faq {
     padding: 0 30px;
+  }
+  .faq h2 {
+    font-size: 1.875rem;
   }
   .faq .accordion {
     font-size: 1.25rem;
@@ -1540,6 +1579,12 @@ main .benefits {
   border-radius: 4px;
 }
 
+@media (max-width: 1400px) {
+  .footer .footer-container {
+    max-width: 1170px;
+  }
+}
+
 @media (max-width: 1200px) {
   .footer .footer-container .footer-content:nth-child(5) {
     -webkit-box-ordinal-group: 0;
@@ -1569,6 +1614,9 @@ main .benefits {
   }
   .footer .footer-container .footer-content .bottom {
     display: none;
+  }
+  .footer .footer-footer {
+    padding: 0;
   }
   .footer .footer-footer > div {
     -webkit-box-orient: vertical;

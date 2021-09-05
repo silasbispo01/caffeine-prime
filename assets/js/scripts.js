@@ -1,5 +1,17 @@
 window.onload = () => {
+    // SCROLL RESPONSIVO
 
+    var scrollContainer = document.querySelector(".plans-options");
+
+    document.body.onresize = () => {
+        if (document.body.clientWidth < 1200) {
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+            });
+        }
+    };
+    
     // HEADER STICKY 
 
     let header = document.querySelector('.header');

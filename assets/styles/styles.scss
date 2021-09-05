@@ -170,6 +170,7 @@ header {
 
   .access-header div {
     padding: 0 30px;
+    height: 73px;
 
     img:first-child {
       display: block;
@@ -254,6 +255,7 @@ main .discover {
 
   .discover p {
     max-width: none;
+    font-size: 1.75rem;
   }
 
   .discover p span {
@@ -262,6 +264,8 @@ main .discover {
 
   .discover button {
     width: 100%;
+    height: 45px;
+    line-height: 0;
   }
 }
 
@@ -424,10 +428,17 @@ main .benefits {
 
 @media(max-width: 890px) {
   main .benefits {
-    padding: 90px 30px 100px;
+    padding: 30px 30px 100px;
   }
+
   .benefits-content {
     background: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .benefits h2 {
+    font-size: 2.25rem;
   }
 
   .benefits-content div {
@@ -625,6 +636,17 @@ main .benefits {
 }
 
 @media(max-width: 890px) {
+  .operation h2 {
+    font-size: 2.25rem;
+  }
+
+  .explanation-group {
+    justify-content: center;
+  }
+  .explanation-group div {
+    width: 65%;
+  }
+
   .explanation-group div .bg {
     width: 280px;
 
@@ -647,7 +669,7 @@ main .benefits {
   }
 
   .explanations {
-    padding: 80px 30px;
+    padding: 30px 30px;
   }
 } 
 /* ESCOLHA SEU PLANO */
@@ -834,6 +856,10 @@ main .benefits {
 }
 
 @media(max-width: 890px) {
+  .plans-options > div > p {
+    height: auto;
+  }
+
   .plans h2 {
     font-size: 1.5rem;
   }
@@ -993,6 +1019,17 @@ main .benefits {
   }
 }
 
+@media (max-width: 1200px) {
+  .plans.two .plans-two-options {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 890px) {
+  .plans.two .plans-two-list-wrapper .list-item {
+    padding: 20px 20px;
+  }
+}
 /* DESCUBRA SEU PLANO */
 
 .discover-your-plain {
@@ -1178,6 +1215,8 @@ main .benefits {
     > button {
       padding: 0 20px;
       font-size: 1.25rem;
+
+      margin-top: 10px;
     }
   }
 
@@ -1219,7 +1258,7 @@ main .benefits {
 
 @media(max-width: 890px) {
   .discover-your-plain > h2 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     margin-inline: 40px;
   }
 }
@@ -1379,6 +1418,10 @@ main .benefits {
 @media(max-width: 890px) {
   .faq {
     padding: 0 30px;
+    
+    h2 {
+      font-size: 1.875rem;
+    }
 
     .accordion {
       font-size: 1.25rem;
@@ -1586,6 +1629,11 @@ main .benefits {
     }
   }
 }
+@media (max-width: 1400px) {
+  .footer .footer-container {
+    max-width: 1170px;
+  }
+}
 
 @media (max-width: 1200px) {
   .footer .footer-container .footer-content:nth-child(5) {
@@ -1620,10 +1668,10 @@ main .benefits {
   }
 
   .footer .footer-footer {
+    padding: 0;
     > div {
       flex-direction: column;
       padding: 20px 30px;
-
       max-width: 500px;
 
       a {
