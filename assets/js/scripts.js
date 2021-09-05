@@ -7,7 +7,7 @@ window.onload = () => {
         if (document.body.clientWidth < 1200) {
             scrollContainer.addEventListener("wheel", (evt) => {
                 evt.preventDefault();
-                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.scrollLeft += evt.deltaY / 2;
             });
         }
     };
