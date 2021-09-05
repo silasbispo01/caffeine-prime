@@ -1041,6 +1041,14 @@ main .benefits {
   .plans.two .plans-two-resume button {
     font-size: 1rem;
     height: 40px;
+    width: 100%;
+  }
+
+  .plans.two .plans-two-list-wrapper .list-item div:last-child button {
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    line-height: 0.9;
   }
 }
 /* DESCUBRA SEU PLANO */
@@ -1272,6 +1280,11 @@ main .benefits {
 @media(max-width: 890px) {
   .discover-container {
     padding: 70px 30px;
+
+    > button {
+      height: 40px;
+      width: 100%;
+    }
   }
 
   .discover-your-plain > h2 {
