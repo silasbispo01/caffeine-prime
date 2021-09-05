@@ -262,6 +262,8 @@ main .discover {
 @media (max-width: 890px) {
   main .discover {
     padding: 200px 30px 100px;
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(30%, black));
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%);
   }
   .discover p {
     max-width: none;
@@ -1401,6 +1403,7 @@ main .benefits {
   .faq .accordion {
     font-size: 1.25rem;
     padding: 0 20px;
+    height: 90px;
   }
   .faq .panel p {
     margin: 0 20px;
